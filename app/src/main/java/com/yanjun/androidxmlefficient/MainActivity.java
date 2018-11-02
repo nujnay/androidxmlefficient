@@ -29,7 +29,7 @@ public class MainActivity extends Activity {
                 super.onMeasure(widthMeasureSpec, heightMeasureSpec);
                 timeMillis += (System.nanoTime() - l);
                 if (++count == 1000) {
-                    Log.e("cww", "finish measure: " + timeMillis);
+                    Log.e("timemmmmm", "finish measure: " + timeMillis);
                 } else {
                     if (count < 1000) {
                         mHandler.postDelayed(new Runnable() {
@@ -49,7 +49,7 @@ public class MainActivity extends Activity {
                 super.onLayout(changed, left, top, right, bottom);
                 timeMillis2 += (System.nanoTime() - l);
                 if (count == 1000) {
-                    Log.e("cww", "finish layout: " + timeMillis2);
+                    Log.e("timemmmmm", "finish layout: " + timeMillis2);
                 }
             }
 
@@ -59,7 +59,7 @@ public class MainActivity extends Activity {
                 super.dispatchDraw(canvas);
                 timeMillis3 += (System.nanoTime() - l);
                 if (count == 1000) {
-                    Log.e("cww", "finish draw: " + timeMillis3);
+                    Log.e("timemmmmm", "finish draw: " + timeMillis3);
                 }
             }
 
