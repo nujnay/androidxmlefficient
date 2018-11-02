@@ -2,11 +2,9 @@ git add ./
 commit_content = "master"
 if [ -z "$1" ];
 then
-    commit_content = "master"
+    git commit -m master
 else
-    commit_content = "$1"
+    git commit -m "$1"
 fi
-git commit -m commit_content
 git push
-echo commit_content
 sleep 3
