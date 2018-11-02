@@ -67,7 +67,6 @@ public class MainActivity extends Activity {
 
         setContentView(root);
 
-
 //        view = new View(this);
         view = LayoutInflater.from(this).inflate(R.layout.test, null);
         root.addView(view);
