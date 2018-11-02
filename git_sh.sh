@@ -1,15 +1,12 @@
 git add ./
 commit_content = "master"
-echo "5555"
-echo commit_content
-echo "$1"
-sleep 2
-if [ -z "$1" ]; then
-    echo "$1 is empty"
+if [ -z "$1" ];
+then
+    commit_content = "master"
+else
+    commit_content = "$1"
 fi
-git commit -m master
+git commit -m commit_content
 git push
-echo "333"
-sleep 2
-echo "555"
-sleep 2
+echo commit_content
+sleep 3
