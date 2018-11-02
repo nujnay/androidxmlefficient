@@ -67,12 +67,6 @@ public class MainActivity extends Activity {
 
         setContentView(root);
 
-        for (int i = 0; i < 10; i++) {
-            FrameLayout rootLocal = new FrameLayout(this);
-            root.addView(rootLocal);
-            root = rootLocal;
-        }
-
 //        view = new View(this);
         view = LayoutInflater.from(this).inflate(R.layout.test, null);
         root.addView(view);
